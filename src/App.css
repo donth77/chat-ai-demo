@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+.sidebar {
+  height: 100%;
+  width: 215px;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  padding: 16px;
+  background: #eee;
+  border-right: 2px solid #e5e5e5;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-logo {
+  height: 30px;
+  font-size: 13px;
+}
+.new-chat-btn {
+  margin-bottom: 40px;
+  cursor: pointer;
+  height: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.sidebar-container {
+  height: 100%;
+}
+
+.chat-history {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.chat-history > h3 {
+  font-size: 14px;
+  color: #525252;
+}
+
+.chat-history-item {
+  display: inline-block;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  width: 100%;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  padding: 6px;
+  border-radius: 4px;
+
+  cursor: pointer;
+}
+
+.chat-history-item:hover {
+  background: #e5e5e5;
+  color: #4338ca;
+}
+
+.chat-history-item-text {
+  margin-left: 8px;
+}
+
+.content {
+  margin-left: 250px;
+
+  height: 95vh;
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-bar {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  height: 30px;
+}
+.input-bar > input {
+  width: 75%;
+  border-radius: 4px;
+  border: 1px solid #e5e5e5;
+  background: #fafafa;
+  padding: 0 12px;
+}
+
+.input-bar > input:focus {
+  outline: none;
+}
+
+.input-bar > button {
+  background: #4338ca;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  width: 100px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.input-bar > button:hover {
+  opacity: 0.8;
+}
+
+.chat {
+  height: 100%;
+  width: 100%;
+  overflow-y: auto;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 20px;
+}
+
+.message {
+  background: #eee;
+  border-radius: 4px;
+
+  font-size: 14px;
+  padding: 12px;
+
+  max-width: 70%;
+}
+
+.user {
+  align-self: flex-end;
+}
+
+.assistant {
+  background: white;
+  border: 1px solid #e5e5e5;
+
+  display: flex;
+  gap: 10px;
+}
+
+.logo {
+  background: #eef2ff;
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+}

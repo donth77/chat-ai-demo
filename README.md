@@ -37,3 +37,9 @@ Input Background - #fafafa
 Logo Background - #eef2ff
 Purple - #4338ca
 Border - #e5e5e5
+
+## Design Reference
+
+---
+
+![Screenshot](https://i.imgur.com/2NQ1xX2.png)
